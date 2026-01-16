@@ -41,7 +41,7 @@ rebuild: clean build
 
 install:
 	sudo apt-get update
-	sudo apt-get install -y cmake clang libgtest-dev ninja-build clang-tidy clang-format
+	sudo apt-get install -y cmake clang libgtest-dev ninja-build clang-tidy clang-format gnuplot graphviz
 
 coverage: test
 	@llvm-profdata merge -sparse $(BUILD_DIR)/tests/default.profraw -o project_template.profdata
