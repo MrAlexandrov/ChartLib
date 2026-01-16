@@ -29,12 +29,6 @@ target_include_directories(chartlib
         $<INSTALL_INTERFACE:include>
 )
 
-# Examples (optional)
-option(BUILD_EXAMPLES "Build example programs" ON)
-if(BUILD_EXAMPLES)
-    add_subdirectory(examples)
-endif()
-
 # Tests (optional)
 option(BUILD_TESTS "Build tests" OFF)
 if(BUILD_TESTS)
