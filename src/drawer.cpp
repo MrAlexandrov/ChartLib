@@ -46,7 +46,7 @@ void TDrawer::GenerateDotFile(
         throw std::runtime_error("Failed to create DOT file: " + filename);
     }
 
-    dotFile << "digraph Graph {\n";
+    dotFile << "digraph G {\n";
     dotFile << "    rankdir=LR;\n";
     dotFile << "    node [shape=circle];\n";
 
